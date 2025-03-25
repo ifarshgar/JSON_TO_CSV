@@ -3,7 +3,7 @@ import { readFromFile, writeToFile } from './fileIO.js';
 import { convertJSONToCSV } from './csv.js';
 
 const convert = async () => {
-  const JSONData = await readFromFile('YOUR_FILE_INSIDE_DATA_FOLDER.json');
+  const JSONData = await readFromFile('sample.json');
   
   const json = await JSON.parse(JSONData);
   
